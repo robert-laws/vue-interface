@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Spot",
+    "owner": "Bob Cobb",
+    "appDate": "2017-7-24 8:30",
+    "appNotes": "Nice dog to meet"
+  },
+  {
+    "name": "Hector",
+    "owner": "Hal Hope",
+    "appDate": "2017-7-29 2:00",
+    "appNotes": "Has long hair"
+  },
+  {
+    "name": "Sam",
+    "owner": "Kal Kool",
+    "appDate": "2017-8-02 12:00",
+    "appNotes": "Likes to play with a ball"
+  },
+  {
+    "name": "Doggie",
+    "owner": "Jim Jupe",
+    "appDate": "2017-8-06 4:30",
+    "appNotes": "Needs a bath"
+  },
+  {
+    "name": "Woofie",
+    "owner": "Mel Mope",
+    "appDate": "2017-10-14 12:45",
+    "appNotes": "Barks a lot"
+  },
+  {
+    "name": "Barkley",
+    "owner": "Val Vine",
+    "appDate": "2017-09-28 5:15",
+    "appNotes": "Very friendly"
+  }
+]

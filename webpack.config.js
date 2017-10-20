@@ -16,10 +16,10 @@ module.exports = {
         loader: 'vue-loader',
       },
       {
-          test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-          use: [{
-              loader: 'file-loader'
-          }]
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+        use: [{
+            loader: 'file-loader'
+        }]
       },
       {
         test: /\.css$/,

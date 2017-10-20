@@ -1,30 +1,34 @@
 <template>
-  <div>
-    <h1>{{title}}</h1>
-    <ul v-for="item in appointments">
+  <div id='main-app'>
+    <ul class='appointment-list' v-for="(item, i) in theAppointments" :key="i">
       <li>{{item.name}}</li>
     </ul>
-    
-
-    
   </div>
 </template>
 
 <script>
-var appts = [
-      {"name":"Spot","owner":"Bob Cobb","appDate":"2017-7-24 8:30","appNotes":"Nice dog to meet"},
-      {"name":"Hector","owner":"Hal Hope","appDate":"2017-7-29 2:00","appNotes":"Has long hair"},
-      {"name":"Sam","owner":"Kal Kool","appDate":"2017-8-02 12:00","appNotes":"Likes to play with a ball"},
-      {"name":"Doggie","owner":"Jim Jupe","appDate":"2017-8-06 4:30","appNotes":"Needs a bath"}
-    ]
-
 export default {
   name: "MainApp",
   data() {
     return {
-      title: "Appointments",
-      appointments: appts
+      theAppointments: []
     }
-  }  
+  },
+  created: function() {
+    $.getJSON('./builds/appointments.json')
+      .done( info => {
+        this.theAppointments = info
+      })
+  }
 }
 </script>
+
+<style scoped>
+  .appointment-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin: 10px 5%;
+    font-size: 1.7rem;
+  }
+</style>
